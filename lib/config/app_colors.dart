@@ -9,12 +9,9 @@ class AppColors {
   static const Color greyColor = Color(0xFF5C5E6F);
   static const Color hintStyleColor = Color(0xFF7477A0);
   static const Color pinkColor = Color(0xFFFB6580);
+  static const Color roundedCheckBocColor =Color(0xffCED0D2);
   static const Color transparentColor = Colors.transparent;
   static const Color textFormFieldBorderColor = Color(0xFFFCED0D2);
   static const Color errorColor = Colors.red;
-
-
-  
-
-  
+  static const Color successColor = Colors.green;
 }

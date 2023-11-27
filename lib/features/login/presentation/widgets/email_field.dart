@@ -9,13 +9,16 @@ import '../../../../core/widets/text_form_field.dart';
 class EmailField extends StatelessWidget {
   const EmailField({
     super.key,
+    this.controller
   });
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: TextFormFieldWidget(
+        controller: controller,
         hintText: AppStrings.emailAddress,
         prefix: const Icon(
           Icons.mail_outline,

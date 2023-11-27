@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:login/features/login/presentation/pages/login_page.dart';
+import 'package:login/core/services/services_locator.dart';
+import 'package:nb_utils/nb_utils.dart';
+import 'config/app_routes.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  ServicesLocator().init();
+  await initialize();
+
   runApp(const MyApp());
 }
 
@@ -11,8 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(428 ,926),
-   
+      designSize: const Size(428, 926),
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -20,7 +26,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             useMaterial3: true,
           ),
-          home: const LoginPage(),
+          onGenerateRoute: Routes.onGenerateRoute,
         );
       },
     );

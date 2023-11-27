@@ -8,11 +8,14 @@ class HomePage extends StatelessWidget {
     return const Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'Home Page',
-            style: TextStyle(
-              fontSize: 20,
+          Center(
+            child: Text(
+              'Home Page',
+              style: TextStyle(
+                fontSize: 50,
+              ),
             ),
           ),
         ],

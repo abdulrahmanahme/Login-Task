@@ -18,6 +18,8 @@ class AppTextStyle {
 
   static const TextStyle fontWeight400 = TextStyle(fontWeight: FontWeight.w400);
   static const TextStyle fontWeight500 = TextStyle(fontWeight: FontWeight.w500);
+  static const TextStyle fontWeightNormal = TextStyle(fontWeight: FontWeight.normal);
+
 
     
   ///Font Family
@@ -67,8 +69,8 @@ class AppTextStyle {
       .copyWith(color: AppColors.whiteColor);
 
     
-       static TextStyle get font13Grey500 => fontCircularStd
-   .merge(fontWeight500 )
+       static TextStyle get font13GreyNormal => fontCircularStd
+   .merge(fontWeightNormal )
       .merge(fontSize13)
       .copyWith(color: AppColors.greyColor);
 

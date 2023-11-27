@@ -9,13 +9,16 @@ import '../../../../core/widets/text_form_field.dart';
 class PasswordField extends StatelessWidget {
   const PasswordField({
     super.key,
+    this.controller
   });
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 20.w),
       child: TextFormFieldWidget(
+        controller:controller ,
         hintText: AppStrings.password,
         prefix: const Icon(
           Icons.lock_outlined,
