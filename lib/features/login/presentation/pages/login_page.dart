@@ -77,11 +77,9 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                         const ForgetPassWordWidget(),
                         SizedBox(
-                          height: 30.h,
-                        ),
-                        SizedBox(
                           height: 10.h,
                         ),
+                        
                         BlocConsumer<LoginCubit, LoginState>(
                             listener: (context, state) {},
                             builder: (context, state) {
