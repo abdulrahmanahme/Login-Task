@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
             child: Scaffold(
               backgroundColor: Colors.transparent,
               body: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 6.w),
+                padding: EdgeInsets.symmetric(horizontal: 15.w),
                 child: ListView(
                   children: [
                     SizedBox(
@@ -111,7 +111,15 @@ class _LoginPageState extends State<LoginPage> {
                         SizedBox(
                           height: 10.h,
                         ),
+                        Text(
+                            AppStrings.or,
+                            style: AppTextStyle.font14Black500,
+                          ),
+                          SizedBox(
+                          height: 10.h,
+                        ),
                         const SocialMediaLoginGroup(),
+                        
                         RichTextWidget(
                           defaultText: AppStrings.doNotHaveAnAccount,
                           spanStyle: AppTextStyle.font14Black500,

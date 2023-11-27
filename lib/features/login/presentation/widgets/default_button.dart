@@ -29,7 +29,7 @@ class DefaultButton extends StatelessWidget {
     return Padding(
       padding:  EdgeInsets.symmetric(horizontal: 8.w),
       child: Card(
-        elevation: 10,
+        elevation: 20,
         child: Container(
           width: double.infinity,
           height: 60.h,
