@@ -21,12 +21,12 @@ class UserRemoteDataSource extends BaseLoginRemoteDataSource {
     if (response.statusCode == 202) {
       var data = UserModel.fromJson(response.data as Map<String, dynamic>);
       print('Data Is ${response.data}');
+
       return data;
     } else  {
       throw ServerExtension(
         errorMessageModel: ErrorMessageModel.fromJson(response.data),
       );
-      
     }
   }
 }
